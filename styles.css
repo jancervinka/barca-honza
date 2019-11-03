@@ -4,8 +4,10 @@ body {
     font-style: normal;
     background-image: url(li.png);
     background-size: 150px auto;
-    background-position: right bottom;
+    background-position: 95% 100%;
     background-repeat: no-repeat;
+    padding-bottom: 100px;
+    overflow-x: hidden;
 }
 
 .main {
@@ -33,8 +35,12 @@ h3 {
     background-color: #FCF7F0;
     background-image: url(forgetmenot.png), url(map.png);
     background-size: auto 80%, auto 30%;
-    background-position:left bottom, right bottom;
+    background-position: 5% 100%, right bottom;
     background-repeat: no-repeat;
+}
+
+.welcome {
+    text-align: center;
 }
 
 .head img{
@@ -60,6 +66,30 @@ h3 {
     margin-top: -7em;
     border-style: solid;
 }
+@media only screen and (max-width: 768px){
+    #program {border-style: none; margin-top: 0px;}
+    h3 {
+        margin-top: 2em;
+    }
+    #invited {
+        background-color: #FCF7F0;
+    }
+    .welcome {
+        transform: scale(0.8);
+    }
+    #header {
+        background-image: url(forgetmenot-light.png), url(map.png);
+    }
+
+
+}
+@media only screen and (min-width: 1024px){
+    #invited {
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
+
+}
 
 #program h3 {
     font-family: din-2014, sans-serif;
@@ -74,17 +104,13 @@ h3 {
     font-weight: 700;
 }
 
-#invited {
-    padding-left: 8rem;
-    padding-right: 8rem;
-}
-
 .button.is-primary {
     background-clip: padding-box;
     background-image: linear-gradient(165deg, #FCE7CA 0%, #E0D4A2 15%, #91A033 100%);
     font-family: ff-tisa-sans-web-pro,sans-serif;
     font-weight: 700;
     font-style: normal;
+    text-transform: uppercase;
 }
 .button.is-primary:hover {
     background-color: #91A033;

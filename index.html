@@ -15,6 +15,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script src="siema.min.js"></script>
   </head>
   <body>
     <section id="header" class="hero is-medium">
@@ -83,6 +84,47 @@
 
     </div>
 
+    <section id="photos" class="container is-fullhd">
+        <div id="siema">
+            <img src="photos/02.jpeg">
+            <img src="photos/03.jpeg">
+            <img src="photos/04.jpeg">
+            <img src="photos/06.jpeg">
+            <img src="photos/07.jpeg">
+            <img src="photos/08.jpeg">
+            <img src="photos/09.jpeg">
+            <img src="photos/10.jpeg">
+            <img src="photos/11.jpeg">
+            <img src="photos/12.jpeg">
+            <img src="photos/13.jpeg">
+            <img src="photos/14.jpeg">
+            <img src="photos/15.jpeg">
+            <img src="photos/16.jpeg">
+            <img src="photos/17.jpeg">
+            <img src="photos/18.jpeg">
+            <img src="photos/19.jpeg">
+            <img src="photos/20.jpeg">
+            <img src="photos/21.jpeg">
+            <img src="photos/22.jpeg">
+            <img src="photos/23.jpeg">
+            <img src="photos/24.jpeg">
+            <img src="photos/25.jpeg">
+            <img src="photos/26.jpeg">
+            <img src="photos/27.jpeg">
+        </div>
+
+        <button class="prev button">
+            <span class="icon is-small">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+        </button>
+        <button class="next button">
+            <span class="icon is-small">
+                <i class="fas fa-chevron-right"></i>
+            </span>
+        </button>
+    </section>
+
     <section id="faq" class="section content columns is-centered">
         <div class="column is-two-thirds">
             <h2>Další informace</h2>
@@ -141,4 +183,16 @@
     </section>
     </div>
   </body>
+  <script>
+        const mySiema = new Siema({
+            selector: "#siema",
+            perPage: {
+                1: 1.2,
+                768: 2.3,
+                1024: 3.4
+            }
+        });
+        document.querySelector('.prev').addEventListener('click', () => mySiema.prev(2));
+        document.querySelector('.next').addEventListener('click', () => mySiema.next(2));
+    </script>
 </html>

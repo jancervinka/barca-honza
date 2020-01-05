@@ -33,9 +33,9 @@ h3 {
 
 #header {
     background-color: #FCF7F0;
-    background-image: url(forgetmenot.png), url(map.png);
-    background-size: auto 80%, auto 30%;
-    background-position: 5% 100%, right bottom;
+    background-image: url(forgetmenot.png);
+    background-size: auto 80%;
+    background-position: 5% 100%;
     background-repeat: no-repeat;
 }
 
@@ -78,7 +78,7 @@ h3 {
         transform: scale(0.8);
     }
     #header {
-        background-image: url(forgetmenot-light.png), url(map.png);
+        background-image: url(forgetmenot-light.png);
     }
 
 
